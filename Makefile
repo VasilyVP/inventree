@@ -9,7 +9,7 @@ start:
 	docker compose up -d
 
 stop:
-	docker compose down G
+	docker compose down
 
 get-item-inventory-python:
 	 python scripts/get_item_inventory.py
