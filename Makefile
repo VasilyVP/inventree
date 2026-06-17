@@ -11,5 +11,8 @@ start:
 stop:
 	docker compose down G
 
-get-item-inventory:
-	docker compose run --rm inventree-server node scripts/get_item_inventory.mts
+get-item-inventory-python:
+	 python scripts/get_item_inventory.py
+
+get-item-inventory-ts:
+	 bun run scripts/get_item_inventory.mts
